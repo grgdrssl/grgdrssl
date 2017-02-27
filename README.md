@@ -1,5 +1,3 @@
 # grgdrssl
 
-********************
-
 Personal portfolio website
