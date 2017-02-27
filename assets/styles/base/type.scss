@@ -1,0 +1,65 @@
+//
+// Type
+// --------------------------------------------------
+
+
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+
+$large-font-size: 34px;
+$medium-font-size: 24px;
+$small-font-size: 20px;
+
+// h1 {
+// 	font-size: 36px;
+// }
+
+// h2 {
+// 	font-size: 31px;
+// }
+
+// h3 {
+// 	font-size: 26px;
+// }
+
+// h4 {
+// 	font-size: 21px;
+// }
+
+// h5 {
+// 	font-size: 16px;
+// }
+
+h2 {
+    @include facit-bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: $base-spacing-unit*2;
+    font-size: $medium-font-size;
+
+    // @include responsive(xlarge) {
+    // 	font-size: $large-font-size;
+    // }
+}
+
+h3 {
+    @include facit-bold;
+    font-size: $small-font-size;
+}
+
+p {
+  	margin-bottom: $base-spacing-unit;
+}
+
+ul,
+ol {
+	margin-top: 0;
+	margin-bottom: $base-spacing-unit;
+	padding: 0;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+ 	margin-bottom: 0;
+}

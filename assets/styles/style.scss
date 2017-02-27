@@ -1,0 +1,37 @@
+/* ==========================================================================
+
+sass --watch assets/styles/style.scss:assets/styles/style.css --style compressed &
+
+   ========================================================================== */
+
+/**
+ * Font Awesome
+ */
+@import "objects/font-awesome/font-awesome";
+
+/**
+ * Base
+ */
+@import "base/variables";
+@import "base/mixins";
+@import "base/normalize";
+@import "base/reset";
+@import "base/type";
+
+/**
+ * Objects
+ */
+@import "objects/grid";
+@import "objects/header";
+@import "objects/main";
+@import "objects/footer";
+@import "objects/about";
+@import "objects/work";
+@import "objects/resume";
+@import "objects/img-carousel";
+
+
+/**
+ * Helpers, Print & Utilities
+ */
+@import "base/print";

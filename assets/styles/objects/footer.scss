@@ -1,0 +1,39 @@
+footer {
+    padding: 45px $base-spacing-unit $base-spacing-unit;
+    text-align: center;
+    font-size: 12px;
+
+    p,
+    ul {
+        margin-bottom: 0;
+    }
+
+    ul {
+    	@include reset-list-style;
+    	// text-align: center;
+    	margin-bottom: $base-spacing-unit;
+
+    	li {
+    		display: inline-block;
+    		margin-right: 10px;
+    		font-size: 24px;
+
+    		&:last-child {
+    			margin-right: 0;
+    		}
+
+            a:hover {
+                @include opacity(.5);
+            }
+    	}
+    }
+
+    @include responsive(medium) {
+    	padding: 50px;
+        font-size: 14px;
+    }
+
+    @include responsive(large) {
+        text-align: left;
+    }
+}

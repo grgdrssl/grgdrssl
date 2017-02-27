@@ -1,0 +1,62 @@
+header {
+    padding: $base-spacing-unit $base-spacing-unit $base-spacing-unit*2;
+    text-align: center;
+
+    h1 {
+        @include facit-bold;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: $medium-font-size;
+        line-height: 1;
+        margin-bottom: $base-spacing-unit;
+        color: black;
+    }
+
+    ul {
+        @include reset-list-style;
+        text-align: center;
+
+        li {
+            display: inline-block;
+            margin-right: $base-spacing-unit;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            a {
+                @include facit-bold;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                // border-bottom: 1px solid $body-background;
+
+                &:hover {
+                    // border-color: black;
+                    @include opacity(.5);
+                }
+            }
+        }
+    }
+
+    @include responsive(medium) {
+        padding: 50px;
+    }
+
+    @include responsive(large) {
+        text-align: left;
+
+        ul {
+            text-align: left;
+
+            li {
+                display: block;
+                line-height: $base-line-height;
+                margin-bottom: 10px;
+
+                a:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

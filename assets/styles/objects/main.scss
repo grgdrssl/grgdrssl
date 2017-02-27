@@ -1,0 +1,99 @@
+main {
+    padding: $base-spacing-unit;
+    // max-width: 1315px;
+
+    a {
+        border-bottom: 1px solid #ddd;
+        color: black;
+
+        &:hover {
+            border-bottom: 1px solid black;
+            cursor: pointer;
+        }
+    }
+}
+
+@include responsive(medium) {
+    main {
+        padding: 0 50px 50px;
+    }
+}
+
+header,
+section {
+    position: relative;
+
+    &:after {
+        content: '';
+        display: block;
+        margin: 0 auto;
+        border-bottom: 2px solid #c00;
+        width: 150px;
+        position: absolute;
+        left: 50%;
+        margin-left: -75px;
+        bottom: 0;
+
+        @include responsive(medium) {
+            border-bottom-width: 4px;
+        }
+    }
+
+    &#resume:after {
+        border: 0;
+        position: static;
+    }
+}
+
+@include responsive(large) {
+
+    main {
+        padding-left: 0;
+        margin-left: $sidebar-width;
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: $sidebar-width;
+
+        &:after {
+            display: none;
+        }
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: $sidebar-width;
+    }
+}
+
+section {
+    padding: $base-spacing-unit*3 0;
+    max-width: 1286px;
+
+    &#about {
+        padding-top: 20px;
+    }
+
+    @include responsive(small) {
+        font-size: 14px;
+        padding-right: $base-spacing-unit;
+        padding-left: $base-spacing-unit;
+    }
+}
+
+@include responsive(medium) {
+
+    section,
+    section#about {
+        padding: 46px 0 100px;
+
+        &#resume {
+            padding-bottom: 0;
+        }
+    }
+}

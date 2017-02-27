@@ -1,0 +1,46 @@
+/* ===================================================
+ * VARIABLES
+ * =================================================== */
+
+
+// Scaffolding
+// -------------------------
+$body-background:        			#f7f7f7;
+$text-color:             			#555;
+
+$brand-color-1:						black;
+
+
+// Links
+// -------------------------
+$link-color:             			$brand-color-1;
+$link-colorHover:        			darken($link-color, 15%);
+
+
+// Typography
+// -------------------------
+$sans-font-family:        			"jaf-facitweb", "Helvetica Neue", sans-serif;
+$base-font-size:          			16px;
+$base-font-family:        			$sans-font-family;
+$base-line-height:        			1.475;
+
+
+
+// Component sizing
+// -------------------------
+$base-spacing-unit:					15px;
+
+$sidebar-width: 370px;
+
+
+// -------------------------
+
+$mobile-nav-header-height: 54px;
+$mobile-nav-button-width: 50px;
+$mobile-nav-button-height: $mobile-nav-header-height;
+$mobile-nav-bar-thickness: 2px;
+$mobile-nav-button-pad: 15px;
+$mobile-nav-button-bar-space: 5px;
+$mobile-nav-button-transistion-duration: 0.1s;
+$mobile-nav-button-background-color: transparent;
+$mobile-nav-button-icon-color: $text-color;
