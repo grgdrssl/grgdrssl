@@ -16,6 +16,7 @@
     h2 {
         text-transform: none;
         letter-spacing: normal;
+        margin-right: 5px;
     }
 
     @include responsive(medium) {
